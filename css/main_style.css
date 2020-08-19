@@ -1,0 +1,18 @@
+#new, #best { width : 100%;}
+#new .item, #best .item { display : inline-block; padding : 10px;}
+
+.title{ text-align : center; font-size : 30px;}
+.visual { position : relative; padding : 0 50px;}
+.visual .prev, .visual .next { display : block; position : absolute; top : 50%; transform : translateY(-50%); color : transparent; width : 75px; height : 88px;}
+.visual .prev { background : url("../images/arrow_left.png") no-repeat center; left : 5%;}
+.visual .next { background : url("../images/arrow_right.png") no-repeat center; right : 5%;}
+.visual .con > div { height : 700px;}
+.visual .con #slide { background : url("../images/slide1.jpg") no-repeat center; background-size : 100% 100%; transition-duration : 2s; transition-delay : 0.2s;}
+.visual .con #slide > a { display : block;}
+.visual .control { position : absolute; left : 0; bottom : 20px; width : 100%; text-align : center;}
+.visual .control > div { display : inline-block; padding : 0 45px 0 0;}
+.visual .control ul { display : inline-block; font-size : 0;}
+.visual .control li { display : inline-block; padding : 0 8px;}
+.visual .control li.on a { background : url("../images/slide_on.png") no-repeat center;}
+.visual .control li.off a {	background : url("../images/slide_off.png") no-repeat center;}
+.visual .control li a { color : transparent; display : block; width : 30px; height : 30px;}

@@ -1,0 +1,93 @@
+<!--
+    dummy image : <img src="http://placehold.it/320x100"/>
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clothes Shopping Mall</title>
+		<link href="css/default.css" rel="stylesheet" type="text/css">
+        <link href="css/detail.css" rel="stylesheet" type="text/css">
+        <link href="css/header.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src = "src/slide_menu.js"></script>
+		<script src = "src/content_tab_detail.js"></script>
+		<script>
+			$(function(){
+				$("header").load("header.html");
+				$("footer").load("footer.html");
+			});
+		</script>
+    </head>
+    <body>
+        <header id = "header">
+        </header>
+        <article id = "main" align = "middle">
+            <span class = "path">Pants > Jeans</span>
+            <hr>
+            <div id = "item_image"><img src="http://placehold.it/500x600" style = "max-width:100%; height:auto;"></div>
+            <div id = "item_info">
+                <ul id = "item_detail">
+                    <li class = "item_name">초 인싸 청바지</li>
+                    <hr>
+                    <li class = "item_price">10,000<strike>50,000</strike></li>
+                    <li class = "item_point">Point<span>100 point (1%)</span></li> 
+                    <li class = "coupon">Coupon<span>No coupon</span></li>
+                    <li class = "item_size"><select name = "size">
+                        <option value = "">Select the size</option>
+                        <option value = "S">S</option>
+                        <option vlaue = "M">M</option>
+                        <option vlaue = "M">L</option>
+                        <option vlaue = "M">XL</option>
+                    </select></li>
+                    <li class = "item_color"><select name = "color">
+                        <option value = "">Select the color</option>
+                        <option value = "red">Red</option>
+                        <option vlaue = "black">Black</option>
+                        <option vlaue = "green">Green</option>
+                        <option vlaue = "blue">Blue</option>
+                    </select></li>
+                    <!-- 가격과 색을 정하면 물건 정보가 나오는 div 태그 삽입-->
+                    <li>총 0개의  상품<span align>총 0원</span></li>
+                </ul>
+				<div class = "button" id = "pick"><a href = "#a">Pick</a></div>
+                <div class = "button" id = "cart"><a href = "#a">Cart</a></div>
+                <div class = "button" id = "buy"><a href = "#a">Buy</a></div>
+            </div>
+			<div class = "select_box">
+				<div class = "on" data-tab="detail" style = "cursor:pointer">
+					상품 정보
+				</div>
+				<div class = "off" data-tab="review" style = "cursor:pointer">
+					리뷰
+				</div>
+				<div class = "off"  data-tab="qna" style = "cursor:pointer">
+					상품 문의
+				</div>
+				<div class = "off"  data-tab="buy_info" style = "cursor:pointer">
+					구매 정보
+				</div>
+			</div>
+			
+            <div id = "detail" class = "tab_content current">
+                <h1>아이템에 대해 설명해 드릴게요!!</h1>
+                <img src="http://placehold.it/1500x2000" style = "max-width:100%; height:auto;">
+            </div>
+			<div id = "review" class = "tab_content">
+				<h1>아이템에 대한 리뷰</h1>
+                <img src="http://placehold.it/1500x2000" style = "max-width:100%; height:auto;">
+			</div>
+			<div id = "qna" class = "tab_content">
+				<h1>아이템에 대한 QNA</h1>
+                <img src="http://placehold.it/1500x2000" style = "max-width:100%; height:auto;">
+			</div>
+			<div id = "buy_info" class = "tab_content">
+				<h1>아이템에 대한 구매정보</h1>
+                <img src="http://placehold.it/1500x2000" style = "max-width:100%; height:auto;">
+			</div>
+        </article>
+        <footer>
+        </footer>
+    </body>
+</html>

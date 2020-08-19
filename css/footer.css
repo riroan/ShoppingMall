@@ -1,0 +1,3 @@
+footer { background-color : black; color : rgb(180,180,180);}
+footer > div { margin-left : 10%; padding : 30px;}
+span { display : block; font-size : 13px;}

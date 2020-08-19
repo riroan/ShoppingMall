@@ -1,0 +1,17 @@
+#main > div { float : left; }
+#main a { display : block; }
+#kinds { width : 20%;}
+#kinds > ul > li { width : 100%; height : 50px; font-size : 20px; line-height : 50px;}
+#kinds > ul > li > a:hover { background-color : rgb(40,40,40); color : rgb(230,230,230); }
+#items { width : 80%; }
+
+h1 { color : black; font-size : 30px; height : 60px; line-height : 60px;}
+
+.order { display : block; float : right; width : 100%;}
+.order > li{float : right; margin-right : 5px; font-size : 15px; color : black; font-weight : normal;}
+.order .current { font-weight : bold;}
+.item { display : inline-block; padding-top : 10px;}
+.path {	font-size : 12px; float : right; margin : 7px;}
+.more { width : 100%; }
+.more > a{border : solid 2px black; width : 30%; margin : 30px auto; height : 50px; line-height : 50px; font-size : 15px;}
+.more > a:hover{ background-color : black; color : white; font-weight : bold;}
